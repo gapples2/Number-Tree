@@ -1,9 +1,12 @@
+let allMainLayers = ["E","F","FS","I","IP","M","MS","N","NN","O","S","UF","X","achs","link"]
+allMainLayers.forEach((l,i)=>allMainLayers[i]="mainLayers/"+l+".js")
+
 let modInfo = {
 	name: "The Number Tree",
 	id: "factor",
 	author: "3^3=7 and gapples2",
 	pointsName:"points",
-	modFiles: ["layers.js", "tree.js", "X/1.js"],
+	modFiles: ["tree.js", "X/1.js", ...allMainLayers],
 
 	discordName: "",
 	discordLink: "",
@@ -13,11 +16,15 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.3.2",
-	name: "gapples2 is here",
+	num: "0.3.2.1",
+	name: "grammar",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
+<h3>v0.3.2.1</h3><br>
+- Spent 4 hours fixing grammar<br>
+- Fixed major bug with meta (though it inflates now)<br>
+- Endgame: still 1 Formula<br>
 <h3>v0.3.2</h3><br>
 - Lots of stuff.<br>
 - Endgame: 1 Formula (new layer!)<br>
